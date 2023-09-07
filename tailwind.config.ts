@@ -17,6 +17,7 @@ export default {
           secondPage: "#6C6C6C",
           textDarker: "#DDD",
           textWhitePage: "#333",
+          textFooter :"#CBCBCB",
         },
       },
       fontFamily: {

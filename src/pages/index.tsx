@@ -60,7 +60,7 @@ export default function Home() {
       </Head>
       <div className="flex h-20 items-center justify-center bg-thrasker-header ">
         <Image
-          src={"/logo.png"}
+          src={"/logo.hq.png"}
           alt="second image"
           className=""
           width={131}
@@ -74,7 +74,7 @@ export default function Home() {
         >
           <div className="ml-4">
             <h1>Providing</h1>
-            <h2>Commercial</h2>
+            <h2 className="my-4">Commercial</h2>
             <h3>Technology Services</h3>
             <div className="w-full md:w-fit">
               <div className="flex flex-row items-center justify-center">
@@ -94,14 +94,14 @@ export default function Home() {
           <span className="mb-2 w-full text-xl md:mb-4 md:w-[300px] md:text-3xl">
             We Possess Exceptional Skill of The Highest Quality
           </span>
-          <span className="text-thrasker-secondPage w-full md:w-[320px]">
+          <span className="text-thrasker-secondPage w-full md:w-[300px]">
             At Expedited Digital, we are your trusted partner for all your
             technology needs. Our managed IT services ensure smooth operations
             and our emergency solutions keep your business prepared.
           </span>
         </div>
         <Image
-          src={"/image 1.png"}
+          src={"/macbooks.png"}
           alt="second image"
           className="mx-auto"
           width={238}
@@ -111,7 +111,7 @@ export default function Home() {
 
       <div
         id="secondDarkDiv"
-        className="overflow-clip bg-thrasker-header px-12 font-medium text-white"
+        className="overflow-cli pb-12 overflow-clip bg-thrasker-header px-12 font-medium text-white"
       >
         <p className="mb-4 w-36 pt-12 text-left text-2xl">How We Do Business</p>
         <hr className="w-full border-2 border-white"></hr>
@@ -154,14 +154,14 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-black px-12">
-        <div className="flex flex-row">
+      <div id="iceCube" className="min-h-[50vh] bg-black px-12">
+        <div className="flex h-full flex-row">
           <div className="z-10 mt-12 flex w-1/2 flex-col bg-transparent">
-            <p className=" my-4 font-semibold text-white">
+            <p className="my-4 font-semibold text-white">
               Our Mission is to provide unbeatable technology solutions that
-              empower businesses to thrive in the digital era.{" "}
+              empower businesses to thrive in the digital era.
             </p>
-            <span className="text-thrasker-textDarker mb-8 ">
+            <span className="text-thrasker-textDarker mb-8">
               We are committed to delivering exceptional value through
               innovative services, competitive pricing, and unparalleled
               customer support. With our turnkey solutions and unwavering
@@ -169,13 +169,15 @@ export default function Home() {
               businesses achieve their goals with the power of technology.
             </span>
           </div>
-          <Image
-            className="h-1/2 w-1/2"
-            src={"/AdobeStock_608670188 1.png"}
-            alt="adobeStock"
-            width={200}
-            height={200}
-          />
+          <div className="relative h-full w-1/2 min-h-[50vh]">
+            <Image
+              layout="fill"
+              src={"/iceCube.jpg"}
+              alt="adobeStock"
+              objectFit="cover"
+              objectPosition="center"
+            />
+          </div>
         </div>
       </div>
 
@@ -185,7 +187,7 @@ export default function Home() {
         </h1>
         <hr className="border-thrasker-textWhitePage mt-8 border-[1.5px]"></hr>
 
-        <p className="my-8">
+        <p className="text-md my-8 font-semibold">
           Our purpose is to make technology easier for our clients.
         </p>
         <span className="text-thrasker-secondPage">
@@ -198,14 +200,14 @@ export default function Home() {
           focus on what you do best – growing your business.
         </span>
         <Image
-          src={"/AdobeStock_221093493 1.png"}
+          src={"/laptop4k.jpg"}
           alt="secondAdobeStock"
           width={200}
           height={200}
-          className="mb-16 h-full w-full"
+          className="mb-16 mt-12 h-full w-full"
         />
         <div className="items-center justify-center text-center">
-          <p className="my-4 text-center text-2xl">Today</p>
+          <p className="my-4 text-center text-3xl">Today</p>
           <div className="inline-block">
             <div className="px-16">
               We are committed to continuous learning and embracing new
@@ -221,13 +223,21 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="footer">
-        <div className="flex flex-row justify-center">
-          <FontAwesomeIcon className="h-4 w-4 text-white" icon={faFacebook} />
-          <FontAwesomeIcon className="h-4 w-4 text-white" icon={faTwitter} />
-          <FontAwesomeIcon className="h-4 w-4 text-white" icon={faInstagram} />
-          <FontAwesomeIcon className="h-4 w-4 text-white" icon={faPinterest} />
+      <div id="footer" className=" text-thrasker-textFooter text-center">
+        <div className="flex flex-row justify-center gap-4 pb-12 pt-16">
+          <FontAwesomeIcon className="h-6 w-6 text-white" icon={faFacebook} />
+          <FontAwesomeIcon className="h-6 w-6 text-white" icon={faTwitter} />
+          <FontAwesomeIcon className="h-6 w-6 text-white" icon={faInstagram} />
+          <FontAwesomeIcon className="h-6 w-6 text-white" icon={faPinterest} />
         </div>
+        <div>
+          <p className="mb-4">@2022 Expedited Digital.</p>
+          <p>12094 Anderson Rd, Unit 119 Tampa, Florida, 33625 United States</p>
+        </div>
+        <p className="mt-12 flex flex-row items-center justify-center pb-12">
+          You are subscribed to BlauMail Mailing List.
+          <p className="underline">Unsubscribe</p>{" "}
+        </p>
       </div>
     </>
   );
