@@ -1,0 +1,71 @@
+#backgroundDiv {
+  background-image: url("/Rectangle 4.png");
+  background-size: cover; /* Cover the entire div */
+  background-position: center; /* Center the background */
+  background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+#footer {
+  background-image: url("/footerBg.jpg");
+  background-size: cover; /* Cover the entire div */
+  background-position: center; /* Center the background */
+  background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+#secondDarkDiv {
+  position: relative;
+}
+
+#secondDarkDiv {
+  position: relative;
+}
+
+#secondDarkDiv::before {
+  content: "";
+  position: absolute;
+  bottom: -50vh;
+  right: -40vw;
+  width: 800px;
+  height: 800px;
+  background-image: url("/Vector.png");
+  background-size: cover;
+  background-position: top left;
+}
+
+/* Breakpoint for medium screens */
+@media (min-width: 768px) {
+  #secondDarkDiv::before {
+    bottom: -40vh;
+    right: -30vw;
+  }
+}
+
+/* Breakpoint for large screens */
+@media (min-width: 1024px) {
+  #secondDarkDiv::before {
+    bottom: -30vh;
+    right: -20vw;
+  }
+}
+
+/* Breakpoint for extra large screens */
+@media (min-width: 1280px) {
+  #secondDarkDiv::before {
+    bottom: -20vh;
+    right: -10vw;
+  }
+}
+
+/* styles/globals.css */
+.pyramid-text {
+  text-align: justify;
+  text-justify: inter-word;
+  max-width: 80%; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+.pyramid-text::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
